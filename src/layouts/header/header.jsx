@@ -9,9 +9,9 @@ import { useEffect } from 'react';
 
 const Header = () => {
   const data = localStorage.getItem('token') ? JSON.parse(localStorage.getItem('token')) : '';
-  let pathnames = window.location.pathname;
+  // let pathnames = window.location.pathname;
 
-  const url = pathnames.split('/').slice(0, -1).join('/');
+  //const url = pathnames.split('/').slice(0, -1).join('/');
 
   const onHandleMobileMenu = () => {
     var root = document.getElementsByTagName('html')[0];
@@ -40,7 +40,7 @@ const Header = () => {
     });
   }, []);
 
-  console.log('sreevidhya ' + url + ' ' + pathnames);
+  //console.log(url + ' ' + pathnames);
   return (
     <div className="header-wrapper">
       <header className="header">
