@@ -47,7 +47,7 @@ const Routing = () => {
   //   patient: '61ea587929e90b4b961335dd'
   // };
   const data = localStorage.getItem('token') ? JSON.parse(localStorage.getItem('token')) : '';
-  console.log(data.length, 'dataaaa');
+  // console.log(data.length, 'dataaaa');
   return (
     <>
       <ToastContainer />

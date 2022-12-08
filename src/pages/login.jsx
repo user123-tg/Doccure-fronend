@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Layout from '../layouts/layout';
 import { useFormik } from 'formik';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Submit from '../themes/submit';
 import Input from '../themes/input';
 import './login-register.scss';
@@ -25,11 +25,9 @@ const Login = (props) => {
   const isLoading = useSelector((state) => state.user.isLoading);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState('');
-  const location = useLocation();
-  const url = new URL(window.location);
-  const access_token = new URLSearchParams(url.search).get('token');
-  console.log(location, 'joe');
-  console.log(access_token, 'sree');
+  //const location = useLocation();
+  //const url = new URL(window.location);
+  //const access_token = new URLSearchParams(url.search).get('token');
   const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {

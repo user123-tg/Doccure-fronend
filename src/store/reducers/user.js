@@ -33,7 +33,7 @@ const initialState = {
 };
 const userReducer = (state = initialState, action) => {
   const { type, payload } = action;
-  console.log(type, 'payload');
+  // console.log(type, 'payload');
   switch (type) {
     case LOGIN_SUCCESS:
       console.log(JSON.stringify(payload), 'payload.........');
