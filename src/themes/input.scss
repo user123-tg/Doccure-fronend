@@ -1,0 +1,17 @@
+@import '../assets/scss/globalVariables.scss';
+input {
+	&:-webkit-autofill {
+		-webkit-box-shadow: 0 0 0px 1000px $color_74 inset !important;
+		&:hover {
+			-webkit-box-shadow: 0 0 0px 1000px $color_74 inset !important;
+		}
+		&:focus {
+			-webkit-box-shadow: 0 0 0px 1000px $color_74 inset !important;
+		}
+	}
+	transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
+}

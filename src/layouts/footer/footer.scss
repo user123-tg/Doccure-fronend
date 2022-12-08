@@ -1,0 +1,150 @@
+$background-color_36: #15558d;
+$color_15: #fff;
+$font-family_4: "Font Awesome 5 Free";
+$color_8: #09e5ab;
+
+.footer {
+
+	.footer-top {
+		padding: 40px 0;
+	}
+	.footer-widget.footer-menu {
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			outline: none;
+			li {
+				a {
+					&:hover {
+					
+						letter-spacing: 0.5px;
+						padding-left: 30px;
+					}
+				}
+			}
+		}
+	}
+	.footer-widget {
+		.footer-logo {
+			margin-bottom: 30px;
+		}
+		.footer-about-content {
+			p {
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	.footer-menu {
+		ul {
+			li {
+				margin-bottom: 10px;
+				position: relative;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				a {
+					
+					font-size: 15px;
+					padding-left: 20px;
+					position: relative;
+					transition: all 0.4s ease 0s;
+					&::before {
+						content: "\f101";
+						
+						font-weight: 900;
+						left: 0;
+						margin-right: 5px;
+						position: absolute;
+						top: 0;
+					}
+				}
+			}
+		}
+	}
+	.footer-bottom {
+		.copyright {
+			border-top: 1px solid #1663a6;
+			padding: 30px 0;
+		}
+		.copyright-text {
+			p {
+			
+				font-size: 15px;
+				a {
+					color: $color_8;
+					-webkit-transition: all 0.4s ease 0s;
+					-o-transition: all 0.4s ease 0s;
+					transition: all 0.4s ease 0s;
+				
+				}
+			}
+			p.title {
+				font-weight: 400;
+				margin: 10px 0 0;
+			}
+		}
+	}
+	.social-icon {
+		ul {
+			display: -webkit-inline-box;
+			display: -ms-inline-flexbox;
+			display: inline-flex;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			li {
+				margin-right: 15px;
+				&:last-child {
+					margin-right: 0;
+				}
+				a {
+					
+					display: -webkit-inline-box;
+					display: -ms-inline-flexbox;
+					display: inline-flex;
+					font-size: 20px;
+					transition: all 0.4s ease 0s;
+					
+				}
+			}
+		}
+	}
+}
+.footer-title {
+
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 30px;
+	text-transform: capitalize;
+}
+.footer-contact-info {
+	
+	font-size: 15px;
+	.footer-address {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		span {
+			margin-right: 20px;
+			i.fa-map-marker-alt {
+				font-size: 20px;
+			}
+		}
+	}
+	p {
+		i {
+			margin-right: 15px;
+		}
+	}
+}
+	.footer {
+		.footer-top {
+			padding: 40px 0;
+		}
+	}
+    
+
+   

@@ -1,0 +1,85 @@
+$color_30: transparent;
+$font-family_3: 'slick';
+$color_41: black;
+$background-color_20: #0de0fe;
+$color_37: #0de0fe;
+.slick-dots {
+	position: absolute;
+	bottom: -25px;
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+
+	li {
+		position: relative;
+		display: inline-block;
+		width: 20px;
+		height: 5px;
+		margin: 0 5px;
+		padding: 0;
+		cursor: pointer;
+		border-radius: 0;
+
+		button {
+			font-size: 0;
+			line-height: 0;
+			display: block;
+			width: 20px;
+			height: 5px;
+			padding: 0;
+			cursor: pointer;
+			color: $color_30;
+			border: 0;
+			outline: none;
+			background: #C0C0C0;
+
+			&:hover {
+				outline: none;
+
+				&:before {
+					opacity: 1;
+				}
+			}
+
+			&:focus {
+				outline: none;
+
+				&:before {
+					opacity: 1;
+				}
+			}
+
+			&:before {
+				display: none;
+				font-family: $font-family_3;
+				font-size: 76px;
+				line-height: 20px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 20px;
+				height: 20px;
+				content: '-';
+				text-align: center;
+				opacity: .25;
+				color: $color_41;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+		}
+	}
+
+	li.slick-active {
+		button {
+			background-color: $background-color_20;
+
+			&:before {
+				opacity: 1;
+				color: $color_37;
+			}
+		}
+	}
+}

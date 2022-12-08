@@ -1,0 +1,106 @@
+@import '../../assets/scss/globalVariables.scss';
+.appointment-list-wrapper{
+    .appointment-list {
+        .profile-info-widget {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            margin-right: auto;
+            text-align: left;
+    
+            .booking-doc-img {
+                img {
+                    border-radius: 4px;
+                    height: 120px;
+                    object-fit: cover;
+                    width: 120px;
+                }
+            }
+        }
+    }
+    .appointments {
+        .appointment-list {
+            background-color: $background-color_5;
+            border: 1px solid #f0f0f0;
+            border-radius: 4px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            padding: 20px;
+    
+            &:last-child {
+                margin-bottom: 20px;
+            }
+        }
+    
+        .appointment-action {
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+        }
+    }
+    
+    .appointment-action {
+        a {
+            + {
+                a {
+                    margin-left: 5px;
+                }
+            }
+    
+            font-size: 13px;
+        }
+    }
+
+    .profile-info-widget {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        text-align: left;
+    
+        .booking-doc-img {
+            margin-right: 15px;
+    
+            img {
+                border-radius: 4px;
+                height: 90px;
+                width: 90px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .profile-det-info {
+        overflow: hidden;
+    
+        h3 {
+            font-size: 17px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+
+    .patient-details {
+        h5 {
+            color: $color_14;
+            font-size: 13px;
+            font-weight: normal;
+            margin-bottom: 8px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+    
+            i {
+                width: 18px;
+            }
+        }
+    }
+
+}

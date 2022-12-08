@@ -1,0 +1,154 @@
+@import '../../assets/scss/globalVariables.scss';
+.review-wrapper{
+   
+
+    .review-listing {
+        border-bottom: 1px solid #f5f7fc;
+        margin-top: 20px;
+        padding-bottom: 30px;
+    
+        >ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+    
+            li {
+                + {
+                    li {
+                        margin-top: 20px;
+                        border-top: 1px dashed #f0f0f0;
+                        padding-top: 20px;
+                    }
+                }
+    
+                .comment {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    margin-bottom: 30px;
+    
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+    
+                    .comment-body {
+                        margin-left: 16px;
+                        width: 100%;
+    
+                        .meta-data {
+                            position: relative;
+                            margin-bottom: 10px;
+    
+                            span {
+                                display: block;
+                                font-size: 16px;
+                                color: $color_14;
+                            }
+    
+                            span.comment-author {
+                                font-weight: 600;
+                                color: $color_1;
+                                text-transform: capitalize;
+                            }
+    
+                            span.comment-date {
+                                font-size: 14px;
+                            }
+    
+                            .review-count {
+                                display: -webkit-box;
+                                display: -ms-flexbox;
+                                display: flex;
+                                position: absolute;
+                                top: 3px;
+                                right: 0;
+                                width: auto;
+                            }
+                        }
+    
+                        .comment-content {
+                            color: $color_14;
+                            margin-top: 15px;
+                            margin-bottom: 15px;
+                            font-size: 14px;
+                        }
+    
+                        .comment-reply {
+                            .comment-btn {
+                                color: $color_19;
+                                display: inline-block;
+                                font-weight: 500;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+    
+                .comments-reply {
+                    list-style: none;
+                    margin-left: 65px;
+                    padding: 0;
+                }
+            }
+        }
+    
+        .recommend-btn {
+            float: right;
+            color: $color_14;
+            font-size: 14px;
+            padding: 5px 0;
+            margin-bottom: 0;
+    
+            a {
+                border: 1px solid rgba(128, 137, 150, 0.4);
+                border-radius: 4px;
+                display: inline-block;
+                padding: 4px 12px;
+                color: $color_14;
+                margin-left: 3px;
+                margin-right: 3px;
+                transition: all .3s;
+    
+                i {
+                    font-size: 16px;
+                }
+            }
+    
+            a.like-btn {
+                &:hover {
+                    background-color: $background-color_45;
+                    border: 1px solid #28a745;
+                    color: $color_15;
+                }
+            }
+    
+            a.dislike-btn {
+                &:hover {
+                    background-color: $background-color_46;
+                    border: 1px solid #dc3545;
+                    color: $color_15;
+                }
+            }
+        }
+    }
+    
+    .recommended {
+        color: $color_42;
+        font-size: 15px;
+        font-weight: 500;
+        margin: 0;
+    }
+    .doc-review.review-listing {
+        margin: 0;
+    }
+    
+    .review-listing.doc-review {
+        >ul {
+            >li {
+                background-color: $background-color_5;
+                border: 1px solid #f0f0f0;
+                padding: 20px;
+            }
+        }
+    }
+}

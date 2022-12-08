@@ -1,0 +1,18 @@
+@import '../../assets/scss/globalVariables.scss';
+.social-media{
+    .submit-section {
+        .submit-btn {
+            padding: 12px 30px;
+            font-weight: 600;
+            font-size: 16px;
+            min-width: 120px;
+    
+            + {
+                .submit-btn {
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+ 
+}

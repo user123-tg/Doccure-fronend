@@ -1,0 +1,77 @@
+@import '../../assets/scss/globalVariables.scss';
+
+.doctor-slider {
+	.profile-sidebar {
+		background-color: $background-color_5;
+		border: 1px solid #f0f0f0;
+		border-radius: 4px;
+		margin-bottom: 30px;
+		overflow: hidden;
+	}
+
+	.widget-profile {
+		background-color: $background-color_5;
+		border-bottom: 1px solid #f0f0f0;
+	
+		.profile-info-widget {
+			display: block;
+			text-align: center;
+	
+			.booking-doc-img {
+				display: inline-block;
+				margin: 0 0 15px;
+				width: auto;
+				padding: 8px;
+				background-color: $background-color_2;
+				border-radius: 50%;
+	
+				img {
+					border-radius: 50%;
+					height: 120px;
+					width: 120px;
+				}
+			}
+		}
+	}
+
+	.pro-widget-content {
+		border-bottom: 1px solid #f0f0f0;
+		padding: 20px;
+		text-align: center;
+	}
+
+	.dashboard-menu.nav {
+		.nav-item {
+			position: relative;
+			width: 100%;
+		}
+	
+		a {
+			color: $color_14;
+			display: block;
+			padding: 16px 20px;
+	
+			span {
+				display: inline-block;
+				vertical-align: middle;
+				padding-right: 15px;
+			}
+	
+			i {
+				display: inline-block;
+				vertical-align: middle;
+				padding-right: 15px;
+			}
+		}
+	
+		span {
+			&:hover {
+				color: $color_37;
+			}
+		}
+	
+		a.active {
+			color: $color_37;
+		}
+	}
+}

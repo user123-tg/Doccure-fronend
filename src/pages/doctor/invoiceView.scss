@@ -1,0 +1,116 @@
+@import "../../assets/scss/globalVariables.scss";
+.invoice-view{
+    .invoice-content {
+        background-color: $background-color_5;
+        border: 1px solid #f0f0f0;
+        border-radius: 4px;
+        margin-bottom: 30px;
+        padding: 30px;
+    }
+    
+    .invoice-item {
+        .invoice-logo {
+            margin-bottom: 30px;
+    
+            img {
+                width: auto;
+                max-height: 52px;
+            }
+        }
+    
+        .invoice-text {
+            h2 {
+                color: $color_1;
+                font-size: 36px;
+                font-weight: 600;
+                font-weight: 400;
+            }
+    
+            padding-top: 42px;
+            padding-bottom: 36px;
+        }
+    
+        .invoice-details {
+            text-align: right;
+            color: $color_14;
+            font-weight: 500;
+    
+            strong {
+                color: $color_1;
+            }
+        }
+    
+        .invoice-details-two {
+            text-align: left;
+        }
+    
+        .customer-text {
+            font-size: 18px;
+            color: $color_1;
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: block;
+        }
+    }
+    
+    .invoice-info {
+        margin-bottom: 30px;
+    
+        p {
+            margin-bottom: 0;
+        }
+    
+        h5 {
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+    
+    .invoice-info.invoice-info2 {
+        text-align: right;
+    }
+    
+    .invoice-table {
+        tr {
+            th {
+                color: $color_1;
+                font-weight: 600;
+                padding: 10px 20px;
+                line-height: inherit;
+            }
+    
+            td {
+                color: $color_1;
+                font-weight: 600;
+                padding: 10px 20px;
+                line-height: inherit;
+                color: $color_14;
+                font-weight: 500;
+            }
+        }
+    }
+    
+    .invoice-table-two {
+        tr {
+            th {
+                color: $color_1;
+                font-weight: 600;
+                line-height: inherit;
+                border-top: 0;
+            }
+    
+            td {
+                color: $color_1;
+                font-weight: 600;
+                padding: 10px 20px;
+                line-height: inherit;
+                color: $color_14;
+                font-weight: 500;
+                border-top: 0;
+                text-align: right;
+            }
+        }
+    
+        margin-bottom: 0;
+    }
+}

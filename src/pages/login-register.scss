@@ -1,0 +1,40 @@
+$background-color_5: #fff;
+$color_38: #3d3d3d;
+$color_3: #09dca4;
+$color_37: #0de0fe;
+.login-right {
+	background-color: $background-color_5;
+	border: 1px solid #f0f0f0;
+	border-radius: 4px;
+	padding: 25px;
+
+	.dont-have {
+		color: $color_38;
+		margin-top: 20px;
+		font-size: 13px;
+
+		a {
+			color: $color_3;
+		}
+	}
+}
+
+.login-header {
+	margin-bottom: 20px;
+
+	p {
+		margin-bottom: 0;
+	}
+
+	h3 {
+		font-size: 18px;
+		margin-bottom: 3px;
+
+		a {
+			color: $color_37;
+			float: right;
+			font-size: 15px;
+			margin-top: 2px;
+		}
+	}
+}

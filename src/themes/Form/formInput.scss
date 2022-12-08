@@ -1,0 +1,44 @@
+@import '../../assets/scss/globalVariables.scss';
+	.form-input{
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+        .form-control {
+            border-color: $border-color_1;
+            color: $color_4;
+            font-size: 15px;
+            min-height: 46px;
+            padding: 6px 15px;
+        
+            &::-webkit-input-placeholder {
+                color: $color_5;
+                font-size: 14px;
+            }
+        
+            &::-moz-placeholder {
+                color: $color_5;
+                font-size: 14px;
+            }
+        
+            &:-ms-input-placeholder {
+                color: $color_5;
+                font-size: 14px;
+            }
+        
+            &::-ms-input-placeholder {
+                color: $color_5;
+                font-size: 14px;
+            }
+        
+            &::placeholder {
+                color: $color_5;
+                font-size: 14px;
+            }
+        
+            &:focus {
+                border-color: $border-color_17;
+                box-shadow: none;
+                outline: 0 none;
+            }
+        }
+    }

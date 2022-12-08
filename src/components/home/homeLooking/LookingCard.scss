@@ -1,0 +1,52 @@
+$color_47: #f1f1f1;
+$background-color_20: #0de0fe;
+$color_15: #fff;
+$background-color_41: #01cae4;
+$border-color_23: #01cae4;
+$color_46: #ffffff;
+
+
+.tile-card-content-1 {
+	background: rgb(0, 0, 0);
+	background: rgba(13, 13, 13, 0.33);
+}
+
+.doctor-book-card-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	color: $color_47;
+	width: 100%;
+	padding: 20px;
+	height: 100%;
+	border-radius: .25rem;
+	>div {
+		width: 100%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+	}
+	.book-btn1 {
+		font-size: 14px;
+	}
+}
+.book-btn1 {
+	background-color: $background-color_20;
+	border: 2px solid #0de0fe;
+	color: $color_15;
+	font-size: 16px;
+	text-align: center;
+	font-weight: 500;
+	padding: 6px 10px;
+	&:hover {
+		background-color: $background-color_41;
+		border-color: $border-color_23;
+		color: $color_46;
+	}
+}

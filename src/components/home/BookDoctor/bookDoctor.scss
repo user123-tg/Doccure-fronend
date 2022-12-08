@@ -1,0 +1,59 @@
+$background-color_1: #f8f9fa;
+$background-color_20: #0de0fe;
+$color_15: #fff;
+$background-color_41: #01cae4;
+$color_23: #e63c3c;
+$border-color_23: #01cae4;
+.section-doctor {
+	background-color: $background-color_1;
+	padding: 80px 0;
+	.section-header {
+		margin-bottom: 30px;
+		p {
+			margin-top: 10px;
+		}
+	}
+	.profile-widget {
+		box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.1);
+		margin-bottom: 0;
+	}
+}
+.about-content {
+	p {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 26px;
+		margin: 0;
+
+		+ {
+			p {
+				margin-top: 20px;
+			}
+		}
+	}
+
+	a {
+		background-color: $background-color_20;
+		border-radius: 4px;
+		color: $color_15;
+		display: inline-block;
+		font-size: 16px;
+		font-weight: 500;
+		margin-top: 30px;
+		min-width: 150px;
+		padding: 15px 20px;
+		text-align: center;
+
+		&:hover {
+			background-color: $background-color_41;
+			border-color: $border-color_23;
+			color: $color_15;
+		}
+
+		&:focus {
+			background-color: $background-color_41;
+			border-color: $border-color_23;
+			color: $color_15;
+		}
+	}
+}

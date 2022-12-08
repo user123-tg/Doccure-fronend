@@ -1,0 +1,150 @@
+@import '../../assets/scss/globalVariables.scss';
+	
+.dashboard {
+
+.breadcrumb-bar {
+	background-color: $background-color_36;
+	padding: 15px 0;
+
+	.breadcrumb-title {
+		color: $color_15;
+		font-size: 22px;
+		font-weight: 700;
+		margin: 5px 0 0;
+	}
+}
+
+.page-breadcrumb {
+	ol {
+		background-color: $background-color_18;
+		font-size: 12px;
+		margin-bottom: 0;
+		padding: 0;
+
+		li {
+			a {
+				color: $color_15;
+			}
+		}
+
+		li.active {
+			color: $color_15;
+		}
+	}
+
+	.breadcrumb-item {
+		+ {
+			.breadcrumb-item {
+				&:before {
+					color: $color_15;
+					font-size: 10px;
+				}
+			}
+		}
+	}
+}
+
+.content {
+	min-height: 200px;
+	padding: 30px 0 0;
+}
+.card {
+	border: 1px solid #f0f0f0;
+	margin-bottom: 1.875rem;
+
+	.card-header {
+		background-color: $background-color_5;
+		border-bottom: 1px solid #f0f0f0;
+
+		.card-title {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.card-body {
+	padding: 1.5rem;
+}
+
+.card-title {
+	margin-bottom: 15px;
+}
+
+.card-header {
+	border-bottom: 1px solid #f0f0f0;
+	padding: 1rem 1.5rem;
+}
+
+.card-footer {
+	background-color: $background-color_5;
+	border-top: 1px solid #f0f0f0;
+	padding: 1rem 1.5rem;
+}
+
+.appointment-tab {
+	margin-bottom: 30px;
+	.nav-tabs {
+		background-color: $background-color_5;
+		padding: 1.5rem;
+		border: 1px solid #f0f0f0;
+		border-radius: .25rem 0.25rem 0 0 !important;
+		border-bottom: 0;
+		button.active {
+			background: #20c0f3;
+			color: $color_46;
+			border-bottom: 3px solid #20c0f3;
+			padding: 0px;
+			border-radius: 30px;
+			width: 130px;
+			height: 45px;
+			line-height: 45px;
+			font-weight: normal;
+		}
+		button {
+			background-color: $color_15;
+			width: 130px;
+			height: 45px;
+			line-height: 45px;
+			padding: 0px;
+			font-weight: normal;
+		}
+	}
+	.tab-content {
+		padding-top: 0;
+	}
+	.card {
+		border-radius: 0;
+	}
+}
+.tab-view {
+	.nav-item {
+		width: 15%;
+		text-align: center;
+		color: $color_36;
+		font-weight: 700;
+
+		&:focus {
+			background: none;
+			color: $color_19;
+		}
+
+		&:hover {
+			background: none;
+			color: $color_19;
+		}
+	}
+
+	.nav-item.active {
+		background: none;
+		color: $color_19;
+		border-bottom: 3px solid #20c0f3;
+	}
+
+	a {
+		padding: 20px 1rem;
+	}
+}
+
+}
+
+
