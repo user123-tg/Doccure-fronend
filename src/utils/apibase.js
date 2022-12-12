@@ -9,8 +9,7 @@ const axiosInstance = axios.create({
   baseURL: 'https://doccure-be.vercel.app/', //process.env.REACT_APP_API_URL,
   headers: {
     Authorization: `Bearer ${token}`
-  },
-  withCrendentials: true
+  }
 });
 
 axiosInstance.interceptors.response.use(
