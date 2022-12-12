@@ -6,7 +6,7 @@ const data = localStorage.getItem('token') ? localStorage.getItem('token') : '';
 const token = data?.token;
 
 const axiosInstance = axios.create({
-  baseURL: 'https://doccure-fe.vercel.app/ ', //process.env.REACT_APP_API_URL,
+  baseURL: 'https://doccure-be.vercel.app/', //process.env.REACT_APP_API_URL,
   headers: {
     Authorization: `Bearer ${token}`
   },
