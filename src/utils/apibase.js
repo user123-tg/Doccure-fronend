@@ -10,7 +10,7 @@ const axiosInstance = axios.create({
   headers: {
     Authorization: `Bearer ${token}`
   },
-//   withCrendentials: true
+  withCrendentials: true
 });
 
 axiosInstance.interceptors.response.use(
